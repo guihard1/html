@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--
+            Tente trabalhar quase sempre com o max-width e comece sempre da menor imagem até a maior imagem, caso contrário não irá funcionar ao diminuir a tela, dentro do srcset="" coloque o endereço da imagem (tem que escrever ele completo, o autocomplete não funciona.)
+
+            O comando <source> ja trás o media e o srcset incluso, tem que apenas preencher.
+        -->
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>vamos aprender a reproduzir áudios em HTML5</p>
+    <!-- <audio src="midia/untitled_2.mp3" controls autoplay></audio> -->
+    <!-- MP3 WAV OGG-->
+    <audio preload="metadata" controls>
+        <!-- É necessário colocar os parâmentros após o preload="" para o player funcionar autoplay e controls. -->
+        <source src="midia/untitled_2.mp3" type="audio/mpeg"> <!--formato do mp3 é audio/mpeg. Dos outros é o nome do arquivo padrão. -->
+        <source src="midia/untitled_2.ogg" type="audio/ogg">
+        <source src="midia/untitled_2.wav" type="audio/wav">
+    </audio> 
+    <p>Infelizmente seu navegador não consegue reproduzir o audio <a href="midia/untitled_2.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+</body>
+</html>

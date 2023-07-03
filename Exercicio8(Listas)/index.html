@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Estudos de HTML/Exercicio4(sobre icone na aba)/favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+    <style>
+        body {
+            background-color: rgb(121, 130, 138);
+        }
+    </style>
+</head>
+<body>
+    <!--Ordem OL depois LI (list itens)-->
+    <!--dentro do OL tem parâmetros adicionar do tipo type (para escolher se é uma lista do tipo numérico ou letars e start para escolher de onde irá começar.)-->
+    <h1>Listas.</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os Dentes</li>
+        <li>Arrumar a Cama</li>
+        <li>Lavar roupas</li>
+        <li>Me Arrumar</li>
+        <li>Sair para trabalhar</li>
+    </ol>
+    <h2>Listas não ordenadas.</h2>
+    <ul>
+        <li>Acordar</li>
+        <li>Escovar os Dentes</li>
+        <li>Arrumar a Cama</li>
+        <li>Lavar roupas</li>
+        <li>Me Arrumar</li>
+        <li>Sair para trabalhar</li>
+    </ul>
+    <!--OL (Ordenered List, lista ordenada) UL (Unordered List, lista não ordenada)-->
+    <h2>Juntando lista.</h2>
+    <!--É possivel concatenar listas fazendo o OL, LI e outro OL seguido de outro LI-->
+    <ol>
+        <li>Coisas
+        <ol type="a">
+            <li>Carro</li>
+            <li>Moto</li>
+            <li>Bike</li>
+            <li>Jetski</li>
+        </ol>
+        </li>
+        <li>Coisas
+        <ol type="a" start="5"> <!--pode usar start nesse caso, mas o certo é sem o start.-->
+            <li>Casa</li>
+            <li>Apartamento</li>
+            <li>Fazenda</li>
+            <li>Mansão</li>
+        </ol>
+        </li>
+    </ol>
+    <h2>Video Games que eu tive.</h2>
+    <ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario World</li>
+            <li>Mortal Kombat</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Dreamcast</li>
+        <ul>
+            <li>Sonic</li>
+            <li>Crazy Taxi</li>
+        </ul>
+        <li>PS3</li>
+        <ul>
+            <li>Resident Evil 5</li>
+            <li>Fifa</li>
+            <li>Pro Soccer Evolution</li>
+        </ul>
+    </ul>
+    <!-- Também é possivel usar o parâmetro TYPE dentro do UL -->
+
+    <!--Se segurar alt e clicar em diferentes pontos da pra fixar o cursor e apagar mais de uma coisa seguida ou digitar mais de uma coisa seguida.-->
+    <h2>Lista de Definição</h2>
+    <!-- Parâmetro DL (Definition List) -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS3</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade ded um site.</dd>
+    </dl>
+
+    <!-- Lista de definição é montada assim:
+    <dl>
+        <dt>
+            <dd>
+
+            </dd>
+        </dt>
+    </dl> 
+    
+    <dl> <- Definition List (Lista de Definição)
+        <dt>TEXTO AQUI</dt>
+        <dd>TEXTO AQUI</dd>
+    </dl>
+-->
+</body>
+</html>
